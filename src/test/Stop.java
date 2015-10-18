@@ -42,7 +42,7 @@ public class Stop {
 
 		}
 
-		System.out.println(rise + "" + "\t" + stop + "\t" + (double) rise / stop);
+		System.out.println(rise + "\t" + stop + "\t" + (double) rise / stop);
 
 	}
 }
