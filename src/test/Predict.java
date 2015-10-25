@@ -85,6 +85,8 @@ public class Predict {
 		 * 预测将来三天
 		 */
 
+		random = Classifiers.random_forest(ins);// 在整个数据集训练
+
 		double[] current = getCurrentInstance(price_list);
 
 		test = new Instances(ins);
