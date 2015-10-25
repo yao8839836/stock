@@ -31,7 +31,7 @@ public class Predict {
 
 		ReadWriteFile.writeFile(weka_file_name, weka_file_content);
 
-		// 读数据，划分训练集、测试集
+		// 读数据，随机划分训练集、测试集
 
 		File file = new File(weka_file_name);
 
@@ -52,7 +52,7 @@ public class Predict {
 		int data_size = ins.numInstances();
 		for (int i = 0; i < data_size; i++) {
 
-			if (i % 2 != 0)
+			if (Math.random() < 0.80)
 				train.add(ins.instance(i));
 			else
 				test.add(ins.instance(i));
@@ -78,8 +78,9 @@ public class Predict {
 			if (predict_result == real_label)
 				predict_true_count++;
 		}
+
 		double accuracy = (double) predict_true_count / test_num;
-		System.out.println(predict_true_count + ", " + test_num + ", " + accuracy);
+		System.out.println("准确预测： " + predict_true_count + "次\n总共预测： " + test_num + "次\n准确率： " + accuracy);
 
 		/*
 		 * 预测将来三天

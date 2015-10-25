@@ -37,6 +37,7 @@ public class Price {
 			price.add(Double.parseDouble(temp[3]));
 			price.add(Double.parseDouble(temp[4]));
 			price.add(Double.parseDouble(temp[5]));
+
 			price_list.add(price);
 
 		}
