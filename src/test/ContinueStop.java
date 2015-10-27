@@ -21,7 +21,7 @@ public class ContinueStop {
 
 		int rise = 0;
 
-		for (int i = 0; i < price_list.size() - 4; i++) {
+		for (int i = 0; i < price_list.size() - 3; i++) {
 
 			List<Double> current = price_list.get(i);
 			List<Double> next = price_list.get(i + 1);
