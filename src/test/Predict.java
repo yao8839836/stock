@@ -152,7 +152,7 @@ public class Predict {
 
 		for (int j = 0; j < 50; j++) {
 
-			List<Double> price = price_list.get(list_size - 50 + j);
+			List<Double> price = price_list.get(list_size - 1 - j);
 
 			int price_kind = price.size();
 
