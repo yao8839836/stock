@@ -1,17 +1,17 @@
 # stock
 Stock price prediction using simple feature and random forest.
 
-#Require
+# Require
 Java 7 or above, I use Java 8 in this project.
 
 Eclipse
-#Demo
+# Demo
 
 src/test/Predict.java
 
 src/test/Stop.java
 
-#Use
+# Use
 
 1. Download a stock file using Yahoo Finance url like this: "http://table.finance.yahoo.com/table.csv?s=000001.ss".
 
